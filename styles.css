@@ -57,7 +57,7 @@ html {
 }
 
 body {
-    max-width: 485px;
+    width: 485px;
     margin: 0 auto;
 }
 
@@ -239,28 +239,19 @@ small {
 
 
 
-/* ---------- Medium Screen Size ---------- */
+/* ---------- Medium Screen Size ---------- 
 
 @media screen and (min-width="880px") {
 
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #gallery {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
 }
 
 
 
-/* ---------- Large Screen Size ---------- */
+/* ---------- Large Screen Size ---------- 
 
 @media screen and (min-width="1300px") {
 
     body {
         max-width: 1300px;  
     }
-}
+} */
