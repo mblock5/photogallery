@@ -99,6 +99,8 @@ nav a {
     position: fixed;
     bottom: 0px;
     right: 0px;
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
 }
 
 /* ---------- Main ------------ */
@@ -200,7 +202,7 @@ input, label {
 }
 
 label {
-    padding: 16px 0px 0px 8px;
+    padding: 16px 0px 0px 10px;
 }
 
 input {
@@ -239,19 +241,114 @@ small {
 
 
 
-/* ---------- Medium Screen Size ---------- 
+/* ---------- Medium Screen Size ---------- */
 
-@media screen and (min-width="880px") {
+@media screen and (min-width: 880px) {
+    body {
+        width: 880px;
+    }
 
+    h1 {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    nav ul {
+       text-align: center;
+    }
+
+   #gallery_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    figure {
+        margin: 0px 8px;
+    }
+
+    figure:nth-child(odd) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+
+    /* --- Form --- */
+
+
+    input, label {
+        width: 85%;
+    }
+
+    label {
+        margin-left: 62px;
+    }
+
+    input {
+        margin-left: 60px;
+    }
+
+    input[type="submit"] {
+        width: 340px;
+    }
 }
 
 
 
-/* ---------- Large Screen Size ---------- 
 
-@media screen and (min-width="1300px") {
+/* ---------- Large Screen Size ---------- */
+
+@media screen and (min-width: 1300px) {
 
     body {
-        max-width: 1300px;  
+        width: 1300px;
     }
-} */
+
+    nav ul {
+        text-align: right;
+        padding-right: 0px;
+     }
+
+    #gallery_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    figure {
+        margin: 0px 4px;
+    }
+
+    figure:nth-child(3n+1) {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    figure:nth-child(3n+2) {
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    figure:nth-child(3n+3) {
+        grid-column-start: 3;
+        grid-column-end: 3;
+    }
+
+     /* --- Form --- */
+
+
+    input, label {
+        width: 80%;
+    }
+
+    label {
+        margin-left: 122px;
+    }
+
+    input {
+        margin-left: 120px;
+    }
+
+    input[type="submit"] {
+        width: 610px;
+    }
+
+} 
